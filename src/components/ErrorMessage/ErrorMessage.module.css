@@ -1,0 +1,6 @@
+/* src/components/ErrorMessage/ErrorMessage.module.css */
+.error {
+  color: red;
+  margin: 20px 0;
+  text-align: center;
+}
