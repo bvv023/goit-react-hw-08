@@ -1,6 +1,8 @@
 /* src/pages/RegistrationPage/RegistrationPage.module.css */
 .registrationPage {
   padding: 20px;
+  width: 350px;
+  margin: 0 auto;
 }
 
 .title {
