@@ -1,7 +1,10 @@
 /* src/components/Layout/Layout.module.css */
+main {
+  width: 100%;
+}
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin-top: 60px;
+  padding-top: 60px;
 }
