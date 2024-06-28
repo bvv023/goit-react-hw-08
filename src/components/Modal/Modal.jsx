@@ -1,3 +1,4 @@
+// src/components/Modal/Modal.jsx
 import PropTypes from "prop-types";
 import css from "./Modal.module.css";
 
