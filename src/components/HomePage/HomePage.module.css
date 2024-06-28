@@ -1,0 +1,10 @@
+/* src/components/HomePage/HomePage.module.css */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+}

@@ -4,29 +4,36 @@ import css from "./Contact.module.css";
 import { AiFillPhone } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 
-const Contact = ({ id, name, number, onDelete }) => (
-  <li className={css.item}>
-    <div className={css.wrapper}>
-      <p className={css.name}>
-        <BsFillPersonFill />
-        &nbsp;{name}
-      </p>
-      <p className={css.number}>
-        <AiFillPhone />
-        &nbsp;{number}
-      </p>
+const Contact = ({ name, number, onDelete, onEdit }) => {
+  return (
+    <div className={css.item}>
+      <div className={css.wrapper}>
+        <p className={css.name}>
+          <BsFillPersonFill />
+          &nbsp;{name}
+        </p>
+        <p className={css.number}>
+          <AiFillPhone />
+          &nbsp;{number}
+        </p>
+      </div>
+      <div className={css.wrapperButton}>
+        <button onClick={onDelete} className={css.button}>
+          Delete
+        </button>
+        <button onClick={onEdit} className={css.button}>
+          Edit
+        </button>
+      </div>
     </div>
-    <button onClick={() => onDelete(id)} className={css.button}>
-      Delete
-    </button>
-  </li>
-);
+  );
+};
 
 Contact.propTypes = {
-  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   onDelete: PropTypes.func.isRequired,
+  onEdit: PropTypes.func.isRequired,
 };
 
 export default Contact;

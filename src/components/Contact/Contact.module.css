@@ -1,6 +1,8 @@
 /* src/components/Contact/Contact.module.css */
 .item {
   display: flex;
+  flex-direction: row;
+  gap: 8px;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -13,13 +15,26 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
 }
 .name,
 .number {
   display: flex;
   margin: 0;
-
   align-items: center;
+  color: #333;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapperButton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .button {
@@ -29,6 +44,8 @@
   background-color: #ff4d4f;
   color: white;
   cursor: pointer;
+  width: 60px;
+  height: 25px;
 }
 
 .button:hover {

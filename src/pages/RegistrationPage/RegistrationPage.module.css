@@ -1,0 +1,10 @@
+/* src/pages/RegistrationPage/RegistrationPage.module.css */
+.registrationPage {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}

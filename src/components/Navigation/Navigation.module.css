@@ -1,0 +1,14 @@
+/* src/components/Navigation/Navigation.module.css */
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

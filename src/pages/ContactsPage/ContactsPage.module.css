@@ -1,0 +1,12 @@
+/* src/pages/ContactsPage/ContactsPage.module.css */
+.contactsPage {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
