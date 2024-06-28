@@ -1,7 +1,10 @@
 /* src/pages/ContactsPage/ContactsPage.module.css */
 .contactsPage {
-  max-width: 600px;
-  margin: 0 auto;
+  width: 350px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
   padding: 20px;
 }
 

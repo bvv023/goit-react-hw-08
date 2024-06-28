@@ -7,14 +7,14 @@ import SearchBox from "../../components/SearchBox/SearchBox";
 import { setFilter } from "../../redux/filters/slice";
 import { selectFilter } from "../../redux/filters/selectors";
 import { fetchContacts } from "../../redux/contacts/operations";
-import { selectContactsLoading } from "../../redux/contacts/selectors"; // Доданий селектор для завантаження
-import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"; // Імпорт LoadingSpinner
+import { selectContactsLoading } from "../../redux/contacts/selectors";
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 import css from "./ContactsPage.module.css";
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
   const filter = useSelector(selectFilter);
-  const isLoading = useSelector(selectContactsLoading); // Використання селектора для завантаження
+  const isLoading = useSelector(selectContactsLoading);
 
   useEffect(() => {
     dispatch(fetchContacts());
@@ -26,7 +26,7 @@ const ContactsPage = () => {
 
   return (
     <div className={css.contactsPage}>
-      <h1 className={css.title}>Contacts</h1>
+      <h1 className={css.title}>Phonebook</h1>
       <ContactForm />
       <SearchBox value={filter || ""} onChange={handleChange} />
       {isLoading ? <LoadingSpinner /> : <ContactList />}

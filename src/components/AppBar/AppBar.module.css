@@ -2,9 +2,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #e9ecef;
+  padding: 10px 30px;
+  background: linear-gradient(to right, #ff69b4, #6495ed, #a9a9a9);
   width: 100%;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }

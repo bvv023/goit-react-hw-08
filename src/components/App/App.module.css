@@ -1,10 +1,15 @@
 /* src/components/App/App.module.css */
 .container {
-  width: 350px;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    #cccccc 0%,
+    #ffc0cb 25%,
+    #87ceeb 50%,
+    #fffacd 75%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .title {
